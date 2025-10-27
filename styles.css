@@ -33,10 +33,10 @@ body {
 
 
     h1 {
-      font-size: 1400%;
+      font-size: 1000%;
       margin-top: 0.5em;
       margin-bottom: 0.5em;
-      letter-spacing: -20px;
+      letter-spacing: -15px;
       font-weight: 200;
       font-family: var(--font-heading);
       line-height: 0.8;
@@ -46,6 +46,7 @@ body {
     h3 {
       margin-top: 20px;
       font-weight: normal;
-      font-size: 400%; 
-      letter-spacing: -5px;
+      font-size: 600%; 
+      letter-spacing: -8px;
+      line-height: 0.8;
     }
