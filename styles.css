@@ -33,9 +33,11 @@ body {
 
 
     h1 {
-      font-size: 600%; 
-      font-weight: 300;
-      letter-spacing: -8px;
+      font-size: 1400%;
+      margin-top: 0.5em;
+      margin-bottom: 0.5em;
+      letter-spacing: -20px;
+      font-weight: 200;
       font-family: var(--font-heading);
       line-height: 0.8;
       margin-bottom: 1rem;
