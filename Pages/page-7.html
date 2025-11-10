@@ -5,11 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nomad Valley Trail</title>
 
-    <!-- External stylesheet -->
     <link rel="stylesheet" href="../styles.css">
 
     <style>
-        /* 6-column grid */
+        .text-block {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto 2rem auto;
+            padding: 1rem;
+        }
+
         .layout-grid {
             display: grid;
             grid-template-columns: repeat(6, 1fr);
@@ -17,31 +22,30 @@
             max-width: 1200px;
             margin: 0 auto;
             padding: 1rem;
-            position: relative;
         }
 
-        /* Image spans columns 1–5 */
+        .image-wrapper {
+            position: relative;
+            grid-column: 1 / span 6;
+        }
+
         .hero-img {
-            grid-column: 1 / span 5;
             width: 100%;
             border-radius: 8px;
-            height: auto;
+            display: block;
         }
 
-        /* h3 spans columns 4–6 and overlaps image */
         .overlap-info {
-            grid-column: 4 / span 3;
-            align-self: start;
-            position: relative;
-            top: -1.5rem; /* adjust overlap */
-        }
-
-        /* Body text block */
-        .text-block {
-            width: 100%;
-            max-width: 900px;
-            margin: 0 auto 2rem auto;
-            padding: 1rem;
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            margin: 0;
+            color: white;
+            font-size: 3rem;
+            font-weight: bold;
+            background: rgba(0,0,0,0.3);
+            padding: 0.3rem 0.6rem;
+            border-radius: 5px;
         }
     </style>
 </head>
@@ -74,12 +78,13 @@
     </div>
 
     <div class="layout-grid">
-        <img 
-            src="../images/RyanWilson_Otmok_Kyrgyzstan_Kazakhstan-37.jpg"
-            class="hero-img"
-        >
-
-        <h3 class="overlap-info">56km. 3.5 days avg.</h3>
+        <div class="image-wrapper">
+            <img 
+                src="../images/RyanWilson_Otmok_Kyrgyzstan_Kazakhstan-37.jpg"
+                class="hero-img"
+            >
+            <h3 class="overlap-info">56km. 3.5 days avg.</h3>
+        </div>
     </div>
 
 </body>
