@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nomad Valley Trail</title>
+
+    <link rel="stylesheet" href="../styles.css">
+
+    <style>
+        .text-block {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto 2rem auto;
+            padding: 1rem;
+        }
+
+        .layout-grid {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            grid-template-rows: repeat(5, 1fr);
+            gap: 1rem;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+
+        .image-wrapper {
+            grid-column: 1 / span 5;
+            grid-row: 1 / 5;
+        }
+
+        .hero-img {
+            width: 103%;
+            border-radius: 8px;
+            display: block;
+        }
+
+        .overlap-info {
+            grid-column: 5 / 7;
+            grid-row: 3 / 8;
+            color: rgb(255, 175, 45);
+            font-size: 5rem;
+            font-weight: light;
+            letter-spacing: -5px;
+            margin: 0;
+            z-index: 100;
+
+            
+    </style>
+
+
+  <style>
+        body {
+            background-color: #ffffff; 
+        }
+
+        h1 {
+            color: rgb(255, 175, 45);
+        }
+
+        h3 {
+            font-size: 800%;
+
+        }
+    
+
+    </style>
+    
+</head>
+
+<body>
+
+    <div class="text-block">
+        <h1>GR 221/Dry Stone Route</h1>
+
+        <p>
+           The GR221, also known as the Dry Stone Route, is a long-distance trail that winds through Mallorca’s Serra de Tramuntana, a UNESCO World Heritage mountain range known for its terraced hillsides, citrus groves, and dramatic limestone cliffs. Considered one of Spain’s most iconic island treks, the GR221 combines rugged coastal paths with historic stone-paved routes originally used by shepherds, charcoal burners, and mountain villagers moving between remote settlements.
+
+Stretching across multiple stages, the trail passes refuges, ancient olive estates, and ridgeline vistas where the Mediterranean appears impossibly blue beneath the mountains. Despite Mallorca’s reputation for beach tourism, the GR221 is surprisingly wild and quiet, especially in its higher segments. Much of the route follows centuries-old dry-stone engineering—walls, terraces, and cobbled paths—that reflect the island’s agricultural heritage and traditional land-use practices. Today, the GR221 has been restored for sustainable hiking, preserving this cultural landscape while giving trekkers access to one of the most stunning mountain corridors in the Balearics.
+        </p>
+    </div>
+
+    <div class="layout-grid">
+         <h3 class="overlap-info">148km. 8 days.</h3>
+        <div class="image-wrapper">
+            <img 
+                src="../images/nahled-mallorca.jpg"
+                class="hero-img"
+            >
+        </div>
+        
+    </div>
+
+</body>
+</html>
