@@ -1,46 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="../styles.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Fishermen's Trail</title>
+    <title>Fishermen's Trail</title>
+
+    <link rel="stylesheet" href="../styles.css">
+
     <style>
+        .text-block {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto 2rem auto;
+            padding: 1rem;
+        }
+
+        .layout-grid {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            grid-template-rows: repeat(8, 1fr);
+            gap: 1rem;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+
+        .image-wrapper {
+            grid-column: 1 / span 5;
+            grid-row: 1 / 5;
+        }
+
+        .hero-img {
+            width: 100%;
+            border-radius: 8px;
+            display: block;
+        }
+
+        .overlap-info {
+            grid-column: 5 / 7;
+            grid-row: 3 / 8;
+            color: rgb(2, 45, 109);
+            font-size: 6rem;
+            font-weight: light;
+            letter-spacing: -5px;
+            margin: 0;
+            z-index: 100;
+
+        }
+    </style>
+
+
+
+  <style>
         body {
             background-color: #dbe1eb; 
         }
 
         h1 {
-            color: rgb(0, 65, 163);
+            color: rgb(2, 45, 109);
+        }
+
+        body {
+            color: rgb(0, 0, 0);
         }
 
         h3 {
-            color: rgb(0, 65, 163);
-        }
+            font-size: 800%;
 
-        img {
-            max-width: 100%;
-            height: auto;
-            margin-top: 15px;
-            border-radius: 8px;
         }
+    
+
     </style>
+    
 </head>
-<body>
-    <h1>The Fishermen's Trail</h1>
 
-    <p>
-       The Fishermen's Trail (Rota Vicentina) in Portugal is a coastal hiking route that traces the paths once used by local fishermen to access remote fishing spots along the Alentejo and Algarve coasts. This trail has a rich history dating back to the early 20th century when fishing was a primary livelihood for many coastal communities in the region. The paths were originally informal tracks, created by generations of fishermen who needed to navigate the rugged coastline to reach their boats and fishing grounds. Over time, these trails became well-trodden routes, connecting small villages and providing access to secluded beaches and coves. The Fishermen's Trail has since been developed into a formal hiking route, preserving its historical significance while promoting sustainable tourism. 
+<body>
+
+    <div class="text-block">
+        <h1>The Fishermen's Trail</h1>
+
+        <p>
+           The Fishermen's Trail (Rota Vicentina) in Portugal is a coastal hiking route that traces the paths once used by local fishermen to access remote fishing spots along the Alentejo and Algarve coasts. This trail has a rich history dating back to the early 20th century when fishing was a primary livelihood for many coastal communities in the region. The paths were originally informal tracks, created by generations of fishermen who needed to navigate the rugged coastline to reach their boats and fishing grounds. Over time, these trails became well-trodden routes, connecting small villages and providing access to secluded beaches and coves. The Fishermen's Trail has since been developed into a formal hiking route, preserving its historical significance while promoting sustainable tourism. 
 
        One must be in good shape to complete the Fishermen's Trail, as it involves navigating steep cliffs, sandy paths, and rocky terrain over a distance of approximately 226 kilometers. Hikers can expect to encounter a variety of landscapes, from dramatic sea cliffs and hidden beaches to rolling hills and traditional villages. The trail is typically completed in about 7 to 12 days, with accommodations available in local guesthouses and inns along the way. The best times to hike the Fishermen's Trail are during the spring (March to May) and fall (September to November) when the weather is mild, and the coastal scenery is at its most vibrant. Summer months can be hot and crowded, while winter may bring unpredictable weather conditions. 
     <p>
-       
-    <h3>226km. 9.5 days avg.</h3>
-    
-    <img src="../images/Screenshot 2025-10-27 at 12.48.21.png"> 
-    
-    <img src="../images/Untitled drawing (7).jpg">
+    </div>
+
+    <div class="layout-grid">
+         <h3 class="overlap-info">226km. 9.5 days.</h3>
+        <div class="image-wrapper">
+            <img 
+                src="../images/Screenshot 2025-10-27 at 12.48.21.png"
+                class="hero-img"
+            >
+    </div>
 
 </body>
 </html>
-

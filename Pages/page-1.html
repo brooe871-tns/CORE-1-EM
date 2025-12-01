@@ -1,37 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="../styles.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Camino Francés</title>
 
-   <style>
+    <link rel="stylesheet" href="../styles.css">
+
+    <style>
+        .text-block {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto 2rem auto;
+            padding: 1rem;
+        }
+
+        .layout-grid {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            grid-template-rows: repeat(5, 1fr);
+            gap: 1rem;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+
+        .image-wrapper {
+            grid-column: 1 / span 5;
+            grid-row: 1 / 5;
+        }
+
+        .hero-img {
+            width: 100%;
+            border-radius: 8px;
+            display: block;
+        }
+
+        .overlap-info {
+            grid-column: 5 / 7;
+            grid-row: 2 / 7;
+            color: rgb(255, 255, 255);
+            font-size: 6rem;
+            font-weight: light;
+            letter-spacing: -5px;
+            margin: 0;
+            z-index: 100;
+    
+    </style>
+
+
+  <style>
         body {
-            background-color: #f5f5dc; 
+            background-color: #dcdcc2; 
         }
 
         h1 {
-            color: green;
+            color: rgb(0, 0, 0);
         }
-
-        h3 {
-            color: green;
-        }
-
-        img {
-            max-width: 100%;
-            height: auto;
-            margin-top: 15px;
-            border-radius: 8px;
+        body {
+            color: rgb(0, 0, 0);
         }
     </style>
-</head>    
+    
+</head>
 
 <body>
-    <h1>The Camino Francés</h1>
-    <p>
-        The Camino Francés, the most popular route of the Camino de Santiago, traces its origins to the early Middle Ages, 
+
+    <div class="text-block">
+        <h1>The Camino Francés</h1>
+
+        <p>
+           The Camino Francés, the most popular route of the Camino de Santiago, traces its origins to the early Middle Ages, 
         when Santiago de Compostela became one of the three great Christian pilgrimage centers alongside Rome and Jerusalem. 
         After the discovery of the relics of Saint James in the 9th century, pilgrims began to travel from across Europe to Galicia. 
         By the 11th and 12th centuries, the Camino Francés—crossing the Pyrenees at Roncesvalles or Somport and stretching through 
@@ -48,12 +87,38 @@
         governments and local communities promote it as both a religious journey and a cultural experience. Today, the Camino Francés attracts 
         hundreds of thousands annually, a blend of faithful pilgrims, secular walkers, and international travelers, making it not just a medieval 
         path of devotion but a modern global phenomenon.
-    </p>
-    
-    <h3>780 km · Avg. 33 Days</h3>
+        </p>
+    </div>
 
-    <img src="../images/813x1216x2.jpg" alt="Map of the Camino Francés">
+    <div class="layout-grid">
+         <h3 class="overlap-info">780 km. 33 Days.</h3>
+        <div class="image-wrapper">
+            <img 
+                src="../images/813x1216x2.jpg"
+                class="hero-img"
+            >
+        </div>
+        
+    </div>
+
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

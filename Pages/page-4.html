@@ -1,45 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="../styles.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nomad Valley Trail</title>
+    <title>Corfu Trail</title>
+
+    <link rel="stylesheet" href="../styles.css">
+
     <style>
+        .text-block {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto 2rem auto;
+            padding: 1rem;
+        }
+
+        .layout-grid {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            grid-template-rows: repeat(5, 1fr);
+            gap: 1rem;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+
+        .image-wrapper {
+            grid-column: 1 / span 5;
+            grid-row: 1 / 5;
+        }
+
+        .hero-img {
+            width: 100%;
+            border-radius: 8px;
+            display: block;
+        }
+
+        .overlap-info {
+            grid-column: 5 / 7;
+            grid-row: 2 / 7;
+            color: rgb(255, 255, 255);
+            font-size: 6rem;
+            font-weight: light;
+            letter-spacing: -5px;
+            margin: 0;
+            z-index: 100;
+
+        }
+    </style>
+
+
+
+  <style>
         body {
-            background-color: #eceae2; 
+            background-color: #000000; 
         }
 
         h1 {
-            color: rgb(106, 126, 23);
+            color: rgb(255, 255, 255);
+        }
+
+        body {
+            color: rgb(255, 255, 255);
         }
 
         h3 {
-            color: rgb(106, 126, 23);
+            font-size: 800%;
+
         }
-
-        img {
-            max-width: 100%;
-            height: auto;
-            margin-top: 15px;
-            border-radius: 8px;
-        }
-    </style>
-</head>
-<body>
-    <h1>Nomad Valley Trail</h1>
-
-    <p>
-       Kyrgyzstan is an incredibly special place to me, and is high on my list of countries to visit; it is one of the first countries my parents lived in together. My dad works for the United Nations, and so my parents often ended up, over the course of their marriage, in far-flung corners of the world (alluding, slightly, to the name of this collection of trails). Their photographs (although not shared here, as they are rather private/personal family material) recount rolling green hills, velvety soft, impossibly sharp mountain peak — black combs against cerulean skies — and incredibly kind people. A kind of rural that is felt not often. 
-    </p>
-
-    <p>
-       The Nomad Valley Trail is a section of the longer Kyrgyz Nomad Trail in Kyrgyzstan, known for its challenging multi-day treks through remote, alpine scenery with yurt camps. According to my parents, who have hiked sections of this trail, it is incredibly beautiful. Shockingly — due to its nation’s barely-touristic nature — the Kyrgyz Nomad Trail is the longest network of trails in Central Asia. These trails were originally used by nomadic people for migration and trade, with their history stretching back centuries for routes like the Salt Route. Modern trails are often a continuation of this legacy, now developed for sustainable tourism while preserving cultural heritage. 
-    </p>
     
-    <h3>56km. 3.5 days avg.</h3>
 
-    <img src="../images/RyanWilson_Otmok_Kyrgyzstan_Kazakhstan-37.jpg" 
+    </style>
+    
+</head>
+
+<body>
+
+    <div class="text-block">
+        <h1>Corfu Trail</h1>
+
+        <p>
+           The sun is rising above a smooth island in the distance and a shimmery, rubbed-out horizon that is the sea. Crickets are vibrantly filling the air and a gentle wind runs across your skin as you move across the dry dirt. This is the Corfu Trail, one that you absolutely must see, and of course, walk. The Corfu Trail is a long-distance footpath that runs the length of the Greek island of Corfu, weaving through olive groves, limestone hills, quiet villages, and protected coastal landscapes. Known for its gentle but steady challenges, the trail offers a surprisingly diverse mix of terrain—from golden beaches and cliffside paths to lush mountain passes near the island’s spine. Despite Corfu’s popularity as a tourist destination, the Corfu Trail remains relatively peaceful, especially on inland segments where time feels slower and the landscape more traditional. Much of the route follows old mule tracks and agricultural paths once used by villagers traveling between settlements or tending to terraced fields. Today, the trail continues that legacy, offering a slow, human-scale way to experience Corfu’s cultural and ecological heritage while supporting local, low-impact tourism.
+        </p>
+    </div>
+
+    <div class="layout-grid">
+         <h3 class="overlap-info">182km. 10 days.</h3>
+        <div class="image-wrapper">
+            <img 
+                src="../images/the-donkey-path-between-makrades-and-agios-georgios-corfu-greece-tcba.webp"
+                class="hero-img"
+            >
+        </div>
+        
+    </div>
+
 </body>
 </html>
-

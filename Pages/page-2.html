@@ -1,44 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="../styles.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Lofoten Crossing</title>
+
+    <link rel="stylesheet" href="../styles.css">
+
     <style>
+        .text-block {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto 2rem auto;
+            margin-top: 15px; 
+            padding: 1rem;
+        }
+
+        .layout-grid {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            grid-template-rows: repeat(5, 1fr);
+            gap: 1rem;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+
+        .image-wrapper {
+            grid-column: 1 / span 5;
+            grid-row: 1 / 5;
+        }
+
+        .hero-img {
+            width: 100%;
+            border-radius: 8px;
+            display: block;
+        }
+
+        .overlap-info {
+            grid-column: 5 / 7;
+            grid-row: 4 / 7;
+            color: rgb(71, 71, 71);;
+            font-size: 6rem;
+            font-weight: light;
+            letter-spacing: -5px;
+            margin: 0;
+            z-index: 100;
+
+            
+    </style>
+
+
+  <style>
         body {
             background-color: #e8e8e8; 
         }
 
         h1 {
             color: rgb(71, 71, 71);
+            margin-bottom: 30px;
         }
 
         h3 {
-            color: rgb(71, 71, 71);
-        }
+            font-size: 800%;
 
-        img {
-            max-width: 100%;
-            height: auto;
-            margin-top: 15px;
-            border-radius: 8px;
         }
+    
+
     </style>
+    
 </head>
-<body>
-    <h1>The Lofoten Crossing</h1>
 
-    <p>
+<body>
+
+    <div class="text-block">
+        <h1>The Lofoten Crossing</h1>
+
+        
         The Lofoten Crossing Trail, running through Norway’s Arctic archipelago, is renowned for its dramatic scenery and remote wilderness. Winding across rugged mountains, fjords, and pristine beaches, the trail has been used for centuries by local fishermen. Unlike many of the other trails in this project, I have visited and hiked the Lofoten Islands with my dad and little brother — one of my most treasured trips of all time — and as such, the images below are taken by me. Historically, the islands provided critical seasonal resources, and travelers navigated the coastline to trade fish, wool, and other goods. In the early 20th century, hikers and naturalists began exploring the Lofoten islands, drawn by the unique interplay of light, water, and rock. Today, the trail is carefully maintained, with marked routes, small cabins, and designated camping areas to preserve the fragile ecosystem and ensure safety for visitors.
 
     <p>
         Hiking the Lofoten Crossing is both physically challenging and spiritually rewarding. The trail offers a mix of steep ascents, narrow ridges, and gentle coastal paths, allowing trekkers to experience varied landscapes over a week-long journey. Seasonal changes dramatically alter the environment: in summer, the midnight sun bathes the islands in golden light, while winter offers the chance to witness the aurora borealis dancing across the Arctic sky. Local villages along the route provide cultural immersion, showcasing traditional fishing practices, art, and cuisine. The Lofoten Crossing Trail attracts a blend of outdoor enthusiasts, photographers, and nature lovers, making it a unique adventure that combines rugged wilderness, rich history, and breathtaking natural beauty.
     </p>
-    
-    <h3>The 'Long Crossing' — 160km. Avg. 9 days.</h3>
+    </div>
 
-    <img src="../images/IMG_0427.jpg" 
+    <div class="layout-grid">
+         <h3 class="overlap-info">160km. 9 days.</h3>
+        <div class="image-wrapper">
+            <img 
+                src="../images/IMG_0427.jpg" 
+                class="hero-img"
+            >
+        </div>
+        
+    </div>
+
 </body>
-</html>
-
