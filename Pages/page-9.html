@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nomad Valley Trail</title>
+
+    <link rel="stylesheet" href="../styles.css">
+
+    <style>
+        .text-block {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto 2rem auto;
+            padding: 1rem;
+        }
+
+        .layout-grid {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            grid-template-rows: repeat(5, 1fr);
+            gap: 1rem;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+
+        .image-wrapper {
+            grid-column: 1 / span 5;
+            grid-row: 1 / 5;
+        }
+
+        .hero-img {
+            width: 70%;
+            border-radius: 8px;
+            display: block;
+        }
+
+        .overlap-info {
+            grid-column: 4 / 7;
+            grid-row: 4 / 7;
+            color: rgb(205, 53, 50);
+            font-size: 5rem;
+            font-weight: light;
+            letter-spacing: -5px;
+            margin: 0;
+            z-index: 100;
+
+            
+    </style>
+
+
+  <style>
+        body {
+            background-color: #ffffff; 
+        }
+
+        h1 {
+            color: rgb(205, 53, 50);
+        }
+
+        h3 {
+            font-size: 800%;
+
+        }
+    
+
+    </style>
+    
+</head>
+
+<body>
+
+    <div class="text-block">
+        <h1>Matterhorn Highlights Trek</h1>
+
+        <p>
+           The Matterhorn is one of the most iconic peaks in the Alps, a pyramidal giant straddling the border of Switzerland and Italy whose silhouette has shaped mountaineering history. Though surrounded by a vast network of trails, the paths encircling and approaching the Matterhorn are known for their demanding alpine terrain, dramatic exposure, and constantly shifting weather. According to many hikers I’ve spoken to—and countless accounts passed down by seasoned trekkers—the area is breathtaking in a way that photographs never quite capture: glaciers draped across ridgelines, high-altitude meadows scattered with slate-roofed hamlets, and the mountain’s sharp, unmistakable profile dominating the horizon.
+
+Despite how famous it is, the region still carries traces of its earlier past, when these routes existed mainly for seasonal movement, trade, and shepherding rather than recreation. Long before tourism transformed Zermatt and Cervinia, locals used these paths to move livestock, transport goods, and cross valleys isolated by snow for much of the year. Modern trails continue this lineage, but with updated markings, mountain huts, and conservation efforts that aim to protect both the alpine environment and the cultural traditions of high-mountain life. Today, trekking near the Matterhorn feels like walking through layered histories—glaciological, cultural, and mountaineering—all converging around one of the most legendary summits on Earth.
+        </p>
+    </div>
+
+    <div class="layout-grid">
+         <h3 class="overlap-info">50km. 5 days.</h3>
+        <div class="image-wrapper">
+            <img 
+                src="../images/matterhorn-north-face-202006_dsc0780.webp"
+                class="hero-img"
+            >
+        </div>
+        
+    </div>
+
+</body>
+</html>
